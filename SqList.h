@@ -1,6 +1,39 @@
 #pragma once
 #include<iostream>
 
+struct DListNode {
+	int val;
+	DListNode* next;
+	DListNode* prev;
+	DListNode(int val) :val(val), next(NULL), prev(NULL) {}
+};
+
+void DPushBack(DListNode*& head,int val) {
+	if (head == NULL) {
+		head = new DListNode(val);
+		head->next = head;
+		head->prev = head;
+	}
+	else {
+		DListNode* cur = head->prev;
+		DListNode* newNode = new DListNode(val);
+		newNode->next = head;
+		cur->next = newNode;
+		newNode->prev = cur;
+		head->prev = newNode;
+	}
+}
+
+void D_PrintList(DListNode* head) {
+	DListNode* cur = head;
+	std::cout << cur->val << " ";
+	cur = cur->next;
+	while (cur!=head) {
+		std::cout << cur->val << " ";
+		cur = cur->next;
+	}
+}
+
 struct ListNode {
      int val;
      ListNode *next;
