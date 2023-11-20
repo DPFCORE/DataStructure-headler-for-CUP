@@ -8,3 +8,6 @@ Creat a Binaty Tree Structure and its threading. also my structure is easy to re
 Creat a Graph using adjecent list, need to be optimised.
 
 # In a nutshell it may be my first SHITTY MOUNTAIN ！！！
+-----
+11.20 update Double List in SeqList.h
+-----
