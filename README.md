@@ -11,3 +11,5 @@ Creat a Graph using adjecent list, need to be optimised.
 -----
 11.20 update Double List in SeqList.h
 -----
+11.21 update a simple structre and Dijstra in Graph.h
+-----
